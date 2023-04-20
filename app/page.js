@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div>App</div>;
+  return (
+    <div>
+      <h4 className="red">Hi!</h4>
+    </div>
+  );
 }
