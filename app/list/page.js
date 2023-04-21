@@ -6,15 +6,14 @@ export default function List() {
   return (
     <div>
       <h4 className="title">List</h4>
-      <div className="food">
-        <h4>{products[0]} $40</h4>
-      </div>
-      <div className="food">
-        <h4>{products[1]} $40</h4>
-      </div>
-      <div className="food">
-        <h4>{products[2]} $40</h4>
-      </div>
+
+      {products.map((a, i) => {
+        return (
+          <div className="food">
+            <h4>{products[i]} $40</h4>
+          </div>
+        );
+      })}
     </div>
   );
 }
