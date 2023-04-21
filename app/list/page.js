@@ -9,7 +9,7 @@ export default function List() {
 
       {products.map((a, i) => {
         return (
-          <div className="food">
+          <div className="food" key={i}>
             <h4>{a} $40</h4>
           </div>
         );
